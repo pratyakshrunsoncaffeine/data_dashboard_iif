@@ -1,0 +1,353 @@
+theme,symbol,source,classification_note
+IT Mid Cap,COFORGE,https://www.coforge.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Mid Cap,PERSISTENT,https://www.persistent.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Mid Cap,KPITTECH,https://www.kpit.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Mid Cap,LTTS,https://www.ltts.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Mid Cap,MPHASIS,https://www.mphasis.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT/ITeS,TCS,https://www.tcs.com/,Company software/technology services or product platform is a proxy classification from its official site; mixed businesses may overlap. No TJI membership or weight claim.
+IT/ITeS,INFY,https://www.infosys.com/,Company software/technology services or product platform is a proxy classification from its official site; mixed businesses may overlap. No TJI membership or weight claim.
+IT/ITeS,HCLTECH,https://www.hcltech.com/,Company software/technology services or product platform is a proxy classification from its official site; mixed businesses may overlap. No TJI membership or weight claim.
+IT/ITeS,WIPRO,https://www.wipro.com/,Company software/technology services or product platform is a proxy classification from its official site; mixed businesses may overlap. No TJI membership or weight claim.
+IT/ITeS,TECHM,https://www.techmahindra.com/,Company software/technology services or product platform is a proxy classification from its official site; mixed businesses may overlap. No TJI membership or weight claim.
+IT/ITeS,COFORGE,https://www.coforge.com/,Company software/technology services or product platform is a proxy classification from its official site; mixed businesses may overlap. No TJI membership or weight claim.
+IT/ITeS,PERSISTENT,https://www.persistent.com/,Company software/technology services or product platform is a proxy classification from its official site; mixed businesses may overlap. No TJI membership or weight claim.
+IT Large Cap,TCS,https://www.tcs.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Large Cap,INFY,https://www.infosys.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Large Cap,HCLTECH,https://www.hcltech.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Large Cap,WIPRO,https://www.wipro.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Large Cap,TECHM,https://www.techmahindra.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Large Cap,LTM,https://www.ltimindtree.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+Life Insurance,HDFCLIFE,https://www.hdfclife.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Life Insurance,SBILIFE,https://www.sbilife.co.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Life Insurance,ICICIPRULI,https://www.iciciprulife.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Life Insurance,LICI,https://licindia.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Life Insurance,CANHLIFE,https://www.canarahsbclife.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Insurance,HDFCLIFE,https://www.hdfclife.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Insurance,SBILIFE,https://www.sbilife.co.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Insurance,ICICIPRULI,https://www.iciciprulife.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Insurance,LICI,https://licindia.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Insurance,CANHLIFE,https://www.canarahsbclife.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Insurance,ICICIGI,https://www.icicilombard.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Insurance,GICRE,https://www.gicre.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Insurance,NIACL,https://www.newindia.co.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Insurance,STARHEALTH,https://www.starhealth.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Alcoholic Beverages,UNITDSPR,https://www.diageoindia.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Alcoholic Beverages,UBL,https://www.unitedbreweries.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Alcoholic Beverages,RADICO,https://www.radicokhaitan.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Alcoholic Beverages,ABDL,https://www.alliedblenders.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Alcoholic Beverages,GODFRYPHLP,https://www.godfreyphillips.co.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Hospitals,APOLLOHOSP,https://www.apollohospitals.com/investor-relations,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Hospitals,FORTIS,https://www.fortishealthcare.com/investors,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Hospitals,MAXHEALTH,https://www.maxhealthcare.in/investors,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Hospitals,MEDANTA,https://www.medanta.org/about-us,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Hospitals,KIMS,https://www.kimshospitals.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Hospitals,ASTERDM,https://www.asterdmhealthcare.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Hospitals,NH,https://www.narayanahealth.org/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Hospitals,RAINBOW,https://www.rainbowhospitals.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+General Insurance,ICICIGI,https://www.icicilombard.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+General Insurance,GICRE,https://www.gicre.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+General Insurance,NIACL,https://www.newindia.co.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+General Insurance,STARHEALTH,https://www.starhealth.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Paper & Board,,,No defensible current Nifty 500 pure-play/proxy identified in the cached constituent snapshot; left blank for analyst review.
+Logistics,DELHIVERY,https://www.delhivery.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Logistics,CONCOR,https://www.concorindia.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Logistics,GESHIP,https://www.greatship.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Non Deposit Taking,BAJFINANCE,https://www.bajajfinserv.in/finance,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Non Deposit Taking,CHOLAFIN,https://www.cholamandalam.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Non Deposit Taking,SHRIRAMFIN,https://www.shriramfinance.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Non Deposit Taking,MUTHOOTFIN,https://www.muthootfinance.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Non Deposit Taking,MANAPPURAM,https://www.manappuram.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Non Deposit Taking,IIFL,https://www.iifl.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Non Deposit Taking,LTF,https://www.ltfs.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Diagnostic Chains,LALPATHLAB,https://www.lalpathlabs.com/about-us,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Diagnostic Chains,VIJAYA,https://www.vijayadiagnostic.com/about-us,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Auto OEM,MARUTI,https://www.marutisuzuki.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto OEM,M&M,https://www.mahindra.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto OEM,HYUNDAI,https://www.hyundai.com/in/en,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto OEM,BAJAJ-AUTO,https://www.bajajauto.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto OEM,EICHERMOT,https://www.eichermotors.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto OEM,TVSMOTOR,https://www.tvsmotor.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto OEM,HEROMOTOCO,https://www.heromotocorp.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Public Bank,SBIN,https://sbi.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Public Bank,BANKBARODA,https://www.bankofbaroda.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Public Bank,CANBK,https://canarabank.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Public Bank,PNB,https://www.pnbindia.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Public Bank,UNIONBANK,https://www.unionbankofindia.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Public Bank,BANKINDIA,https://bankofindia.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Public Bank,IOB,https://www.iob.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Public Bank,UCOBANK,https://www.ucobank.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Infrastructure,LT,https://www.larsentoubro.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Infrastructure,ADANIENT,https://www.adanienterprises.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Infrastructure,ADANIPORTS,https://www.adaniports.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Infrastructure,NBCC,https://www.nbccindia.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Infrastructure,NCC,https://www.ncclimited.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Infrastructure,RVNL,https://rvnl.org/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Infrastructure,IRCON,https://www.ircon.org/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Infrastructure,KEC,https://www.kecrpg.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Infrastructure,KPIL,https://kalpatarupower.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Cement,ULTRACEMCO,https://www.ultratechcement.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Cement,SHREECEM,https://www.shreecement.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Cement,AMBUJACEM,https://www.ambujacement.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Cement,DALBHARAT,https://www.dalmia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Cement,JKCEMENT,https://www.jkcement.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Cement,RAMCOCEM,https://www.ramcocements.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Cement,JSWCEMENT,https://www.jswcement.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+FMCG,HINDUNILVR,https://www.hul.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+FMCG,ITC,https://www.itcportal.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+FMCG,NESTLEIND,https://www.nestle.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+FMCG,BRITANNIA,https://www.britannia.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+FMCG,DABUR,https://www.dabur.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+FMCG,MARICO,https://marico.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+FMCG,GODREJCP,https://www.godrejcp.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+FMCG,TATACONSUM,https://www.tataconsumer.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+IT - Product/Platform,OFSS,https://www.oracle.com/in/financial-services/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT - Product/Platform,INTELLECT,https://www.intellectdesign.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT - Product/Platform,AFFLE,https://www.affle.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT - Product/Platform,NETWEB,https://www.netwebindia.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+Banks,SBIN,https://sbi.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Banks,HDFCBANK,https://www.hdfcbank.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Banks,ICICIBANK,https://www.icicibank.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Banks,AXISBANK,https://www.axisbank.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Banks,KOTAKBANK,https://www.kotak.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Banks,BANKBARODA,https://www.bankofbaroda.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Banks,CANBK,https://canarabank.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Fertilizer,COROMANDEL,https://www.coromandel.biz/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Fertilizer,CHAMBLFERT,https://www.chambalfertilisers.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Fertilizer,FACT,https://fact.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Fertilizer,PARADEEP,https://www.paradeepphosphates.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Fertilizer,DEEPAKFERT,https://www.deepakfertilisers.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Metals,TATASTEEL,https://www.tatasteel.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Metals,JSWSTEEL,https://www.jswsteel.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Metals,HINDALCO,https://www.hindalco.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Metals,VEDL,https://www.vedantalimited.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Metals,NMDC,https://www.nmdc.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Metals,HINDZINC,https://www.hzlindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Metals,SAIL,https://www.sail.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Private Bank,HDFCBANK,https://www.hdfcbank.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Private Bank,ICICIBANK,https://www.icicibank.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Private Bank,AXISBANK,https://www.axisbank.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Private Bank,KOTAKBANK,https://www.kotak.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Private Bank,INDUSINDBK,https://www.indusind.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Private Bank,FEDERALBNK,https://www.federalbank.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Private Bank,IDFCFIRSTB,https://www.idfcfirstbank.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Transformers,TARIL,https://www.transformerindia.com/about-us,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Transformers,POWERINDIA,https://www.hitachienergy.com/in/en/about-us/company-profile,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Transformers,GVT&D,https://www.gevernova.com/grid-solutions,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Transformers,CGPOWER,https://www.cgglobal.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Packaging and Containers,,,No defensible current Nifty 500 pure-play/proxy identified in the cached constituent snapshot; left blank for analyst review.
+Jewellery,TITAN,https://www.titancompany.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Jewellery,KALYANKJIL,https://www.kalyanjewellers.net/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Jewellery,THANGAMAYL,https://thangamayil.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Communication Equipment,TEJASNET,https://www.tejasnetworks.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Communication Equipment,HFCL,https://www.hfcl.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Communication Equipment,STLTECH,https://www.stl.tech/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+PSU,COALINDIA,https://www.coalindia.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+PSU,ONGC,https://ongcindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+PSU,NTPC,https://www.ntpc.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+PSU,POWERGRID,https://www.powergrid.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+PSU,SBIN,https://sbi.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+PSU,BEL,https://bel-india.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+PSU,BHEL,https://www.bhel.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+PSU,IRFC,https://irfc.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Innerwear Manufacturers,PAGEIND,https://www.pageind.com/,"Jockey India apparel business includes innerwear; included as an analyst proxy, not a claim about TJI membership or weights."
+City Gas,ATGL,https://www.adanigas.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+City Gas,IGL,https://www.iglonline.net/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+City Gas,MGL,https://www.mahanagargas.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Holding Companies,BAJAJHLDNG,https://www.bajajgroup.company/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Holding Companies,CHOLAHLDNG,https://www.murugappa.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Holding Companies,GODREJIND,https://www.godrejindustries.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Holding Companies,TATAINVEST,https://www.tatainvestment.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Holding Companies,JIOFIN,https://www.jfs.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Paint Manufacturers,ASIANPAINT,https://www.asianpaints.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Paint Manufacturers,BERGEPAINT,https://www.bergerpaints.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Real Estate,DLF,https://www.dlf.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Real Estate,LODHA,https://www.lodhagroup.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Real Estate,OBEROIRLTY,https://www.oberoirealty.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Real Estate,PRESTIGE,https://www.prestigeconstructions.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Real Estate,BRIGADE,https://www.brigadegroup.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Real Estate,GODREJPROP,https://www.godrejproperties.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Real Estate,PHOENIXLTD,https://www.thephoenixmills.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Railways,TITAGARH,https://titagarh.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Railways,RVNL,https://rvnl.org/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Railways,IRCON,https://www.ircon.org/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Railways,IRFC,https://irfc.co.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Railways,RAILTEL,https://www.railtel.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Railways,RITES,https://rites.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Railways,IRCTC,https://www.irctc.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Railways,CONCOR,https://www.concorindia.co.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Wires & Cables,POLYCAB,https://polycab.com/cables,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Wires & Cables,KEI,https://www.kei-ind.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Wires & Cables,FINCABLES,https://www.fincables.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Wires & Cables,APARINDS,https://apar.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Wires & Cables,RRKABEL,https://www.rrkabel.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Packaging Films,,,No defensible current Nifty 500 pure-play/proxy identified in the cached constituent snapshot; left blank for analyst review.
+IT Small Cap,AFFLE,https://www.affle.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Small Cap,INTELLECT,https://www.intellectdesign.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Small Cap,BBOX,https://blackbox.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Small Cap,SAGILITY,https://www.sagilityhealth.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+IT Small Cap,IKS,https://www.ikshealth.com/,"IT size bucket is an analyst proxy; company operations are evidenced by its official site, while exact cap-style thresholds may differ. No TJI membership or weight claim."
+NBFC - Deposit -Taking,BAJFINANCE,https://www.bajajfinserv.in/finance,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Deposit -Taking,SHRIRAMFIN,https://www.shriramfinance.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Deposit -Taking,MUTHOOTFIN,https://www.muthootfinance.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Deposit -Taking,MANAPPURAM,https://www.manappuram.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Deposit -Taking,CREDITACC,https://www.creditaccessgrameen.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+NBFC - Deposit -Taking,FIVESTAR,https://www.fivestarcredit.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Rating Agencies,CRISIL,https://www.crisil.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Electrical Appliances,HAVELLS,https://www.havells.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Electrical Appliances,VOLTAS,https://www.voltas.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Electrical Appliances,BLUESTARCO,https://www.bluestarindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Electrical Appliances,CROMPTON,https://www.crompton.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Electrical Appliances,WHIRLPOOL,https://www.whirlpoolindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Telecom,BHARTIARTL,https://www.airtel.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Telecom,IDEA,https://www.myvi.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Telecom,INDUSTOWER,https://www.industowers.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Telecom,TATACOMM,https://www.tatacommunications.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Telecom,TTML,https://www.tatatelebusiness.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Defence,BEL,https://bel-india.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Defence,HAL,https://hal-india.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Defence,BDL,https://bdl-india.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Defence,MAZDOCK,https://mazagondock.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Defence,GRSE,https://www.grse.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Defence,COCHINSHIP,https://cochinshipyard.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Defence,SOLARINDS,https://www.solargroup.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Defence,DATAPATTNS,https://www.data-patterns.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Metal Pipes,APLAPOLLO,https://www.aplapollo.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Metal Pipes,WELCORP,https://www.welspun.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Metal Pipes,JINDALSAW,https://www.jindalsaw.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Plywood,,,No defensible current Nifty 500 pure-play/proxy identified in the cached constituent snapshot; left blank for analyst review.
+Pharma,SUNPHARMA,https://sunpharma.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma,DRREDDY,https://www.drreddys.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma,CIPLA,https://www.cipla.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma,LUPIN,https://www.lupin.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma,AUROPHARMA,https://www.aurobindo.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma,ALKEM,https://www.alkemlabs.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma,DIVISLAB,https://www.divislabs.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma,TORNTPHARM,https://www.torrentpharma.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Refractories,RHIM,https://www.rhimagnesita.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Power,NTPC,https://www.ntpc.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Power,POWERGRID,https://www.powergrid.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Power,TATAPOWER,https://www.tatapower.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Power,ADANIPOWER,https://www.adanipower.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Power,JSWENERGY,https://www.jswenergy.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Power,TORNTPOWER,https://www.torrentpower.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Power,NHPC,https://www.nhpcindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Power,SJVN,https://sjvn.nic.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pipe Manufacturers,ASTRAL,https://www.astralpipes.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pipe Manufacturers,SUPREMEIND,https://www.supreme.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pipe Manufacturers,FINCABLES,https://www.fincables.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pipe Manufacturers,JINDALSAW,https://www.jindalsaw.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pipe Manufacturers,WELCORP,https://www.welspun.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+EMS,DIXON,https://www.dixoninfo.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+EMS,KAYNES,https://www.kaynestechnology.co.in/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+EMS,SYRMA,https://syrmasgs.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+EMS,PGEL,https://www.pg-electronics.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+EMS,AMBER,https://www.ambergroupindia.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+EMS,NETWEB,https://www.netwebindia.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Solar Panel Mfg,WAAREEENER,https://www.waaree.com/solar-pv-modules/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Solar Panel Mfg,EMMVEE,https://www.emmvee.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Solar Panel Mfg,PREMIERENE,https://www.premierenergies.com/,"Primary company source describes the named operating business; included as an analyst theme proxy, not as a TJI constituent/weight claim."
+Agro Chemicals,UPL,https://www.upl-ltd.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Agro Chemicals,PIIND,https://www.piindustries.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Agro Chemicals,SUMICHEM,https://www.sumichem-at.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Agro Chemicals,AARTIIND,https://www.aarti-industries.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Aviation,INDIGO,https://www.goindigo.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Home Finance,AAVAS,https://www.aavas.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Home Finance,HOMEFIRST,https://homefirstindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Home Finance,PNBHOUSING,https://www.pnbhousing.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Home Finance,LICHSGFIN,https://www.lichousing.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Home Finance,BAJAJHFL,https://www.bajajhousingfinance.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Home Finance,AADHARHFC,https://www.aadharhousing.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Yarn,VTL,https://vardhman.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Yarn,TRIDENT,https://www.tridentindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Yarn,KPRMILL,https://www.kprmilllimited.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Yarn,WELSPUNLIV,https://www.welspunliving.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Plastic Pipes,ASTRAL,https://www.astralpipes.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Plastic Pipes,SUPREMEIND,https://www.supreme.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Asset Management,HDFCAMC,https://www.hdfcfund.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Asset Management,ICICIAMC,https://www.icicipruamc.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Asset Management,NAM-INDIA,https://mf.nipponindiaim.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Asset Management,ABSLAMC,https://mutualfund.adityabirlacapital.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Asset Management,UTIAMC,https://www.utimf.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Chemicals,SRF,https://www.srf.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Chemicals,PIDILITIND,https://www.pidilite.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Chemicals,DEEPAKNTR,https://www.deepaknitrite.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Chemicals,AETHER,https://aether.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Chemicals,ATUL,https://www.atul.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Chemicals,TATACHEM,https://www.tatachemicals.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Chemicals,NAVINFLUOR,https://www.nfil.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Chemicals,CLEAN,https://www.cleanchem.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Hospitality,INDHOTEL,https://www.ihcltata.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Hospitality,EIHOTEL,https://www.eihltd.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Hospitality,LEMONTREE,https://www.lemontreehotels.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Hospitality,ITC,https://www.itcportal.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto Ancillary,MOTHERSON,https://www.motherson.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto Ancillary,BOSCHLTD,https://www.bosch.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto Ancillary,BHARATFORG,https://www.bharatforge.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto Ancillary,UNOMINDA,https://www.unominda.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto Ancillary,SONACOMS,https://www.sonacomstar.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto Ancillary,ENDURANCE,https://www.endurancegroup.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto Ancillary,APOLLOTYRE,https://www.apollotyres.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Auto Ancillary,CEATLTD,https://www.ceat.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Dairy Products,,,No defensible current Nifty 500 pure-play/proxy identified in the cached constituent snapshot; left blank for analyst review.
+Media & Entertainment,SUNTV,https://www.sunnetwork.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Media & Entertainment,ZEEL,https://www.zee.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Media & Entertainment,PVRINOX,https://www.pvrcinemas.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Tyre,APOLLOTYRE,https://www.apollotyres.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Tyre,BALKRISIND,https://www.bkt-tires.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Tyre,CEATLTD,https://www.ceat.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Tyre,JKTYRE,https://www.jktyre.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Tyre,MRF,https://www.mrftyres.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - Small Cap,GRANULES,https://granulesindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - Small Cap,GLENMARK,https://www.glenmarkpharma.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - Small Cap,NATCOPHARM,https://www.natcopharma.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - Small Cap,GLAND,https://glandpharma.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - Small Cap,EMCURE,https://www.emcure.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - API & CRAMS,DIVISLAB,https://www.divislabs.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - API & CRAMS,LAURUSLABS,https://www.lauruslabs.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - API & CRAMS,SYNGENE,https://www.syngeneintl.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - API & CRAMS,NEULANDLAB,https://www.neulandlabs.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - API & CRAMS,ANTHEM,https://anthem.bio/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Pharma - API & CRAMS,SAILIFE,https://www.sailife.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Tiles,KAJARIACER,https://www.kajariaceramics.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Textiles,VTL,https://vardhman.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Textiles,KPRMILL,https://www.kprmilllimited.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Textiles,TRIDENT,https://www.tridentindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Textiles,PAGEIND,https://www.pageind.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Textiles,WELSPUNLIV,https://www.welspunliving.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Glass Products,ASAHIINDIA,https://www.asahiindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Microfinance,CREDITACC,https://www.creditaccessgrameen.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Retail Chains,DMART,https://www.dmartindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Retail Chains,TRENT,https://trentlimited.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Retail Chains,VMM,https://www.vishalmegamart.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Retail Chains,NYKAA,https://www.nykaa.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Retail Chains,KALYANKJIL,https://www.kalyanjewellers.net/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Sugar,EIDPARRY,https://www.eidparry.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Sugar,BALRAMCHIN,https://www.balrampurchini.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Recycling,GRAVITA,https://www.gravitaindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Recycling,JAINREC,https://jainresource.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Upstream,ONGC,https://ongcindia.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Upstream,OIL,https://oil-india.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Upstream,VEDL,https://www.vedantalimited.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Dyes & Pigments,,,No defensible current Nifty 500 pure-play/proxy identified in the cached constituent snapshot; left blank for analyst review.
+Packaged Meat,AVANTIFEED,https://www.avantifeeds.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Batteries,EXIDEIND,https://www.exideindustries.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Batteries,HBLENGINE,https://www.hbl.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Oil Refiners,RELIANCE,https://www.ril.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Oil Refiners,IOC,https://iocl.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Oil Refiners,BPCL,https://www.bharatpetroleum.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Oil Refiners,HINDPETRO,https://www.hindustanpetroleum.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Oil Refiners,MRPL,https://mrpl.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Oil Refiners,CHENNPETRO,https://cpcl.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Speciality Chemicals,AETHER,https://aether.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Speciality Chemicals,CLEAN,https://www.cleanchem.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Speciality Chemicals,NAVINFLUOR,https://www.nfil.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Speciality Chemicals,FLUOROCHEM,https://www.gfl.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Speciality Chemicals,PRIVISCL,https://www.privi.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+QSR,JUBLFOOD,https://www.jubilantfoodworks.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+QSR,DEVYANI,https://dil-rjcorp.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Polymers,SUPREMEIND,https://www.supreme.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Polymers,ASTRAL,https://www.astralpipes.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Polymers,PIDILITIND,https://www.pidilite.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Alkali Chemicals,TATACHEM,https://www.tatachemicals.com/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Bearings,SCHAEFFLER,https://www.schaeffler.co.in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.
+Bearings,TIMKEN,https://www.timken.com/en-in/,Analyst proxy based on the company’s stated principal business; theme overlap is allowed. This is not a claim about TJI constituents or weights.

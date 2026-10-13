@@ -1,0 +1,13 @@
+streamlit>=1.50,<2
+pandas>=2.2,<3
+numpy>=2,<3
+requests>=2.32,<3
+beautifulsoup4>=4.12,<5
+lxml>=5,<7
+yfinance>=0.2.58
+matplotlib>=3.9,<4
+seaborn>=0.13,<1
+scipy>=1.13,<2
+scikit-learn>=1.5,<2
+openpyxl>=3.1,<4
+pyarrow>=16,<24
