@@ -72,6 +72,16 @@ def _empty(name: str) -> pd.DataFrame:
     return pd.DataFrame(columns=SCHEMAS[name])
 
 
+def _append_observations(existing: pd.DataFrame, incoming: pd.DataFrame) -> pd.DataFrame:
+    if incoming is None or incoming.empty:
+        return existing
+    if existing is None or existing.empty:
+        return incoming.copy()
+    present_columns = [column for column in incoming.columns if column not in existing.columns or incoming[column].notna().any()]
+    combined = pd.concat([existing, incoming.loc[:, present_columns]], ignore_index=True)
+    return combined.reindex(columns=list(dict.fromkeys([*existing.columns, *incoming.columns])))
+
+
 def _request(url: str, *, method: str = "get", params: dict | None = None,
              json_body: dict | None = None, referer: str | None = None,
              timeout: int = TIMEOUT, retries: int = RETRIES) -> requests.Response:
@@ -1345,8 +1355,8 @@ def collect(config: ResearchConfig, progress: Callable | None = None) -> tuple[d
         if qcache is not None and hcache is not None:
             qframe = qcache.reindex(columns=SCHEMAS["quarterly"]) if qcache is not None else _empty("quarterly")
             hframe = hcache.reindex(columns=SCHEMAS["holdings"]) if hcache is not None else _empty("holdings")
-            tables["quarterly"] = pd.concat([tables["quarterly"], qframe], ignore_index=True)
-            tables["holdings"] = pd.concat([tables["holdings"], hframe], ignore_index=True)
+            tables["quarterly"] = _append_observations(tables["quarterly"], qframe)
+            tables["holdings"] = _append_observations(tables["holdings"], hframe)
             quality.append(_quality("quarterly", qframe, "exact-request cache", "cached", symbol=sym))
             quality.append(_quality("holdings", hframe, "exact-request cache", "cached", symbol=sym))
         else:
@@ -1369,8 +1379,8 @@ def collect(config: ResearchConfig, progress: Callable | None = None) -> tuple[d
                 if hcache is not None:
                     hframe = hcache.reindex(columns=SCHEMAS["holdings"])
                 # Published Screener tables are in INR crore and all available quarters/periods are retained.
-                tables["quarterly"] = pd.concat([tables["quarterly"], qframe], ignore_index=True)
-                tables["holdings"] = pd.concat([tables["holdings"], hframe], ignore_index=True)
+                tables["quarterly"] = _append_observations(tables["quarterly"], qframe)
+                tables["holdings"] = _append_observations(tables["holdings"], hframe)
                 if not qframe.empty:
                     _write_cache(qframe, "quarterly_symbol", config, symbol=sym, universe=config.universe,
                                  fundamental_cap=config.fundamental_count, parser_version="quarters-section-v2")
@@ -1386,7 +1396,7 @@ def collect(config: ResearchConfig, progress: Callable | None = None) -> tuple[d
                 for dataset, cached_frame in (("quarterly", cached_q), ("holdings", cached_h)):
                     if cached_frame is not None:
                         cached_frame = cached_frame.reindex(columns=SCHEMAS[dataset])
-                        tables[dataset] = pd.concat([tables[dataset], cached_frame], ignore_index=True)
+                        tables[dataset] = _append_observations(tables[dataset], cached_frame)
                         quality.append(_quality(dataset, cached_frame, "exact-request cache", "cached",
                                                 "retained after sibling Screener dataset fetch failed", sym))
                     else:

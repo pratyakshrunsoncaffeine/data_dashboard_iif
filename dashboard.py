@@ -7,6 +7,7 @@ from io import BytesIO
 from pathlib import Path
 import sys
 import zipfile
+import numpy as np
 
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
@@ -23,8 +24,8 @@ from iif_research.pipeline import load_run, run_research
 
 st.set_page_config(page_title="data_dashboard_iif", page_icon="📊", layout="wide")
 st.title("data_dashboard_iif")
-st.caption("Market data, derived indicators, coverage, and exportable research report.")
 st.info("Cloud outputs use temporary storage. Download each research pack before ending the session.")
+st.markdown("<style>[data-testid='stMetric']{background:#F5F8F5;border:1px solid #E2E9E4;border-radius:10px;padding:12px 14px;min-height:92px} [data-testid='stMetricLabel']{color:#62746B}</style>", unsafe_allow_html=True)
 
 
 def _runs(config: ResearchConfig) -> list[Path]:
@@ -36,6 +37,106 @@ def _runs(config: ResearchConfig) -> list[Path]:
 def _frame(mapping, key):
     value = (mapping or {}).get(key)
     return value.copy() if isinstance(value, pd.DataFrame) else pd.DataFrame(value or [])
+
+
+def _overview_figure(result):
+    cfg = result["config"]
+    tables = result["tables"]
+    analysis = result["analysis"]
+    fig, axes = plt.subplots(2, 2, figsize=(15, 7.4), constrained_layout=True, facecolor="white")
+    ink, muted, grid, green, teal, blue, red = "#18332B", "#62746B", "#E2E9E4", "#5C9E43", "#168C78", "#416C8A", "#C96B5B"
+
+    markets = _frame(tables, "markets")
+    if {"date", "name", "close"}.issubset(markets.columns):
+        markets["date"] = pd.to_datetime(markets["date"], errors="coerce")
+        markets["close"] = pd.to_numeric(markets["close"], errors="coerce")
+        markets = markets.loc[markets.date.between(pd.Timestamp(cfg.start), pd.Timestamp(cfg.end))].dropna(subset=["date", "close"])
+        selected = [("Nifty 50", blue), ("Nifty Bank", teal), ("Nifty Midcap 100", green), ("S&P 500", red), ("Nasdaq", "#9B79A8")]
+        ax = axes[0, 0]
+        plotted = 0
+        for name, color in selected:
+            frame = markets.loc[markets.name.astype(str).str.casefold().eq(name.casefold())].sort_values("date")
+            if not frame.empty:
+                values = frame.close / frame.close.iloc[0] * 100
+                ax.plot(frame.date, values, linewidth=1.8, color=color, label=name)
+                plotted += 1
+        ax.axhline(100, color=muted, linestyle=(0, (4, 3)), linewidth=0.8)
+        ax.set_title("Relative index performance", loc="left", color=ink, fontweight="bold")
+        ax.set_ylabel("Index (start = 100)", color=muted)
+        if plotted:
+            ax.legend(frameon=False, fontsize=7.5, ncol=2, loc="upper left")
+        else:
+            ax.text(.5, .5, "No index history in this report", ha="center", va="center", transform=ax.transAxes, color=muted)
+    else:
+        ax = axes[0, 0]
+        ax.set_title("Relative index performance", loc="left", color=ink, fontweight="bold")
+        ax.text(.5, .5, "No index history in this report", ha="center", va="center", transform=ax.transAxes, color=muted)
+
+    breadth = _frame(analysis, "breadth")
+    ax = axes[0, 1]
+    if {"date", "advancers", "decliners"}.issubset(breadth.columns):
+        breadth["date"] = pd.to_datetime(breadth["date"], errors="coerce")
+        breadth = breadth.loc[breadth.date.between(pd.Timestamp(cfg.start), pd.Timestamp(cfg.end))].sort_values("date")
+        denominator = pd.to_numeric(breadth.advancers, errors="coerce").fillna(0) + pd.to_numeric(breadth.decliners, errors="coerce").fillna(0)
+        share = pd.to_numeric(breadth.advancers, errors="coerce").div(denominator.replace(0, np.nan)).mul(100)
+        ax.plot(breadth.date, share.rolling(5, min_periods=2).mean(), color=teal, linewidth=1.8, label="5-day avg advancing share")
+        if "above_50dma_pct" in breadth:
+            ax.plot(breadth.date, pd.to_numeric(breadth.above_50dma_pct, errors="coerce"), color=blue, linewidth=1.5, label="Above 50-day average")
+        if "above_200dma_pct" in breadth:
+            ax.plot(breadth.date, pd.to_numeric(breadth.above_200dma_pct, errors="coerce"), color=green, linewidth=1.5, label="Above 200-day average")
+        ax.set_ylim(0, 100)
+        ax.legend(frameon=False, fontsize=7.5, loc="upper left")
+    else:
+        ax.text(.5, .5, "No breadth observations in this report", ha="center", va="center", transform=ax.transAxes, color=muted)
+    ax.set_title("Breadth and trend participation", loc="left", color=ink, fontweight="bold")
+    ax.set_ylabel("Share of stocks (%)", color=muted)
+
+    flows = _frame(tables, "flows")
+    ax = axes[1, 0]
+    if {"date", "category", "net_cr"}.issubset(flows.columns):
+        flows["date"] = pd.to_datetime(flows["date"], errors="coerce")
+        flows["net_cr"] = pd.to_numeric(flows["net_cr"], errors="coerce")
+        flows = flows.loc[flows.date.between(pd.Timestamp(cfg.start), pd.Timestamp(cfg.end))].dropna(subset=["date", "net_cr"])
+        for category, color in [("DII", teal), ("FII", blue)]:
+            frame = flows.loc[flows.category.astype(str).str.upper().eq(category)].groupby("date", as_index=False).net_cr.sum().sort_values("date")
+            if not frame.empty:
+                ax.plot(frame.date, frame.net_cr.cumsum() / 1000, color=color, linewidth=1.8, label=category)
+        ax.axhline(0, color=muted, linewidth=0.8)
+        ax.legend(frameon=False, fontsize=8, ncol=2, loc="upper left")
+        ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=3, maxticks=5))
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%d %b"))
+    else:
+        ax.text(.5, .5, "No institutional flow data in this report", ha="center", va="center", transform=ax.transAxes, color=muted)
+    ax.set_title("Cumulative institutional flows · observed daily history", loc="left", color=ink, fontweight="bold")
+    ax.set_ylabel("₹ thousand crore", color=muted)
+
+    niche = _frame(analysis, "niche_performance")
+    ax = axes[1, 1]
+    if {"theme", "report_return_pct", "availability", "selected_members"}.issubset(niche.columns):
+        niche["report_return_pct"] = pd.to_numeric(niche["report_return_pct"], errors="coerce")
+        niche = niche.loc[niche.availability.eq("available") & niche.selected_members.ge(3)].dropna(subset=["report_return_pct"])
+        if not niche.empty:
+            selected_niche = pd.concat([niche.nlargest(4, "report_return_pct"), niche.nsmallest(4, "report_return_pct")]).drop_duplicates("theme").sort_values("report_return_pct")
+            colors = [green if value >= 0 else red for value in selected_niche.report_return_pct]
+            ax.barh(selected_niche.theme, selected_niche.report_return_pct, color=colors, height=.66)
+            ax.axvline(0, color=muted, linewidth=.8)
+    else:
+        ax.text(.5, .5, "No eligible niche baskets in this report", ha="center", va="center", transform=ax.transAxes, color=muted)
+    ax.set_title("Niche-theme return leaders and laggards", loc="left", color=ink, fontweight="bold")
+    ax.set_xlabel("Return over report period (%)", color=muted)
+
+    for ax in axes.flat:
+        ax.grid(axis="y", color=grid, linewidth=.6)
+        ax.set_axisbelow(True)
+        ax.tick_params(colors=muted, labelsize=7.5)
+        for side in ("top", "right"):
+            ax.spines[side].set_visible(False)
+        for side in ("left", "bottom"):
+            ax.spines[side].set_color(grid)
+        if ax in (axes[0, 0], axes[0, 1]):
+            ax.xaxis.set_major_locator(mdates.MonthLocator())
+            ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %y"))
+    return fig
 
 
 def _chart(chart_name, title=None):
@@ -89,8 +190,9 @@ def _chart_png_bundle(run_path: Path) -> bytes:
     return out.getvalue()
 
 
-base = ResearchConfig()
 today = datetime.now(ZoneInfo("Asia/Kolkata")).date()
+default_start = (pd.Timestamp(today) - pd.DateOffset(months=4)).date().isoformat()
+base = ResearchConfig(start=default_start, end=today.isoformat())
 existing = _runs(base)
 # Load the newest checksum-valid saved report once per browser session. This is
 # local file I/O only: no collector or external source is called at startup.
@@ -168,27 +270,46 @@ if result:
         if pngs:
             st.download_button("Download chart PNGs (300 dpi)", data=_chart_png_bundle(run_path), file_name=f"{run_path.name}_charts_300dpi.zip", mime="application/zip", use_container_width=True)
 
-tabs = st.tabs(["Overview", "Institutions", "Momentum", "Results", "Correlation", "Breadth/Delivery", "Global/Macro", "Niche/Macro", "Events", "Market state", "Data coverage"])
+sections = ["Overview", "Institutions", "Momentum", "Results", "Correlation", "Breadth/Delivery", "Global/Macro", "Niche/Macro", "Events", "Market state", "Data coverage"]
+section = st.radio("Dashboard sections", sections, horizontal=True, label_visibility="collapsed", key="active_dashboard_section")
 
-with tabs[0]:
-    st.header("Overview")
+if section == "Overview":
+    st.header("Market dashboard")
     if result:
         cfg = result["config"]
-        c1, c2, c3 = st.columns(3)
-        c1.metric("Universe", cfg.universe.upper())
-        c2.metric("Report period", f"{cfg.start} → {cfg.end}")
         prices = _frame(result["tables"], "prices")
         covered = 0
         if {"date", "symbol", "close"}.issubset(prices):
             observed = pd.to_datetime(prices.date, errors="coerce").between(pd.Timestamp(cfg.start), pd.Timestamp(cfg.end))
             covered = prices.loc[observed & pd.to_numeric(prices.close, errors="coerce").notna(), "symbol"].nunique()
-        c3.metric("Stocks with prices", f"{covered}/{len(_frame(result['tables'], 'members'))}")
-        _chart("market_levels", "Global and macro levels")
-        _chart("constituent_performance", "Constituent performance")
+        members = len(_frame(result["tables"], "members"))
+        index_momentum = _frame(result["analysis"], "index_momentum")
+        nifty = index_momentum.loc[index_momentum.get("symbol", pd.Series(dtype=str)).astype(str).eq("^NSEI")]
+        nifty_return = pd.to_numeric(nifty.get("period_return_pct", pd.Series(dtype=float)), errors="coerce").dropna()
+        flow_summary = _frame(result["analysis"], "flow_summary")
+        dii = pd.to_numeric(flow_summary.loc[flow_summary.get("category", pd.Series(dtype=str)).eq("DII"), "net_cr"], errors="coerce") if {"category", "net_cr"}.issubset(flow_summary.columns) else pd.Series(dtype=float)
+        fii = pd.to_numeric(flow_summary.loc[flow_summary.get("category", pd.Series(dtype=str)).eq("FII"), "net_cr"], errors="coerce") if {"category", "net_cr"}.issubset(flow_summary.columns) else pd.Series(dtype=float)
+        flow_dates = pd.to_datetime(_frame(result["tables"], "flows").get("date", pd.Series(dtype=str)), errors="coerce").dropna()
+        flow_period = f"{flow_dates.min():%d %b}–{flow_dates.max():%d %b}" if not flow_dates.empty else "no observations"
+        breadth = _frame(result["analysis"], "breadth")
+        breadth_latest = breadth.sort_values("date").iloc[-1] if not breadth.empty and "date" in breadth else None
+        st.caption(f"{cfg.universe.upper()}  ·  {pd.Timestamp(cfg.start):%d %b} to {pd.Timestamp(cfg.end):%d %b %Y}  ·  {covered:,}/{members:,} constituents with price data")
+        cards = st.columns(5)
+        cards[0].metric("Nifty 50 · period", f"{nifty_return.iloc[-1]:+.1f}%" if not nifty_return.empty else "—")
+        cards[1].metric(f"DII net flows · {flow_period}", f"₹{dii.iloc[-1] / 1000:+.1f}k cr" if not dii.empty else "—")
+        cards[2].metric(f"FII net flows · {flow_period}", f"₹{fii.iloc[-1] / 1000:+.1f}k cr" if not fii.empty else "—")
+        cards[3].metric("Above 50-day avg.", f"{float(breadth_latest['above_50dma_pct']):.0f}%" if breadth_latest is not None and "above_50dma_pct" in breadth_latest else "—")
+        cards[4].metric("Price coverage", f"{covered:,}/{members:,}")
+        st.divider()
+        overview_fig = _overview_figure(result)
+        st.pyplot(overview_fig, width="stretch")
+        plt.close(overview_fig)
+        with st.expander("Open full-period market context"):
+            _chart("market_levels", "Global and macro levels")
+            _chart("constituent_performance", "Constituent performance")
         html_report = run_path / "report.html"
         if html_report.exists():
             st.download_button("Download print-friendly HTML report", data=html_report.read_bytes(), file_name="iif_research_report.html", mime="text/html")
-        _table("valuations", "Valuation snapshot")
         notes = run_path / "newsletter_notes.md"
         if notes.exists():
             with st.expander("Newsletter notes: deterministic data facts"):
@@ -196,7 +317,7 @@ with tabs[0]:
     else:
         st.info("Run the collector or load an existing report. The dashboard does not collect data on startup.")
 
-with tabs[1]:
+if section == "Institutions":
     st.header("Institutions")
     _chart("institutional_flows", "Daily cash market flows")
     _chart("participant_positioning", "Participant long-share positioning and option PCR")
@@ -209,7 +330,7 @@ with tabs[1]:
     _table("official_holdings", "Official ownership disclosures and filing dates")
     _table("holdings", "Reported holdings")
 
-with tabs[2]:
+if section == "Momentum":
     st.header("Momentum")
     _chart("stock_momentum", "Stock momentum")
     _chart("index_momentum_heatmap", "Index and macro horizon returns")
@@ -217,7 +338,7 @@ with tabs[2]:
     _table("stock_momentum", "Derived stock momentum", analysis=True)
     _table("index_momentum", "Index and macro momentum", analysis=True)
 
-with tabs[3]:
+if section == "Results":
     st.header("Results")
     _table("period_prices", "Period price performance", analysis=True)
     _chart("daily_return_heatmap", "Daily stock returns")
@@ -236,7 +357,7 @@ with tabs[3]:
     _table("official_filings", "Dated NSE financial filing inventory")
     _table("quarterly_history", "Quarterly history", analysis=True)
 
-with tabs[4]:
+if section == "Correlation":
     st.header("Correlation")
     _chart("correlation_raw", "Raw sample correlation")
     _table("correlation_pair_summary", "Correlation pair statistics", analysis=True)
@@ -246,14 +367,14 @@ with tabs[4]:
     if result:
         st.caption(f"Requested window: {result['config'].correlation_sessions} sessions; minimum observations: {result['config'].min_correlation_observations}. Sample correlations use available paired daily returns and may cover a shorter actual date span.")
 
-with tabs[5]:
+if section == "Breadth/Delivery":
     st.header("Breadth and delivery")
     _chart("breadth", "Market breadth")
     _table("breadth", "Daily breadth indicators", analysis=True)
     _chart("delivery", "Delivery activity")
     _table("delivery", "Daily delivery observations")
 
-with tabs[6]:
+if section == "Global/Macro":
     st.header("Global and macro")
     st.caption("All series are displayed as dated observations with their source units. Publication availability and fetched timestamps are preserved in the source tables; these are research records rather than live quotes.")
     _chart("global_gdp_latest", "Latest GDP observations by country")
@@ -283,7 +404,7 @@ with tabs[6]:
     _table("long_index_history", "Long index history")
     _table("members_by_size", "Published members by size group")
 
-with tabs[7]:
+if section == "Niche/Macro":
     st.header("Niche themes and macro correlations")
     if not result:
         st.info("Load or generate a report to inspect niche baskets and macro correlations.")
@@ -451,14 +572,14 @@ with tabs[7]:
             else:
                 st.info("Latest theme/macro statistics are unavailable for this run.")
 
-with tabs[8]:
+if section == "Events":
     st.header("Events")
     _chart("official_release_timeline", "Official economic release dates")
     _table("economic_calendar", "Economic release calendar")
     _table("events", "Corporate and market events")
     _table("bse_events", "BSE announcements")
 
-with tabs[9]:
+if section == "Market state":
     st.header("Market state")
     st.caption("Observed market participation, sector leadership, risk and delivery activity. Each figure uses the dates and coverage shown in its caption; unavailable inputs are identified below.")
     if not result:
@@ -492,7 +613,7 @@ with tabs[9]:
             for name, title, _ in available:
                 _table(name, title, analysis=True)
 
-with tabs[10]:
+if section == "Data coverage":
     st.header("Data coverage")
     if result:
         for name, frame in result["tables"].items():
