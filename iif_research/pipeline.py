@@ -4,6 +4,8 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 import json
 import hashlib
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
+from queue import Empty, Queue
 import pandas as pd
 from .config import ResearchConfig, TABLE_NAMES
 
@@ -19,6 +21,33 @@ def definition_digest():
     return digest.hexdigest()
 
 
+def _collect_concurrently(providers, config, progress):
+    progress_messages = Queue()
+
+    def queue_progress(*parts):
+        progress_messages.put(" | ".join(map(str, parts)))
+
+    def publish_progress():
+        while True:
+            try:
+                progress(progress_messages.get_nowait())
+            except Empty:
+                return
+
+    with ThreadPoolExecutor(max_workers=len(providers)) as executor:
+        futures = {executor.submit(provider, config, progress=queue_progress): provider for provider in providers}
+        pending = set(futures)
+        results = {}
+        while pending:
+            completed, pending = wait(pending, timeout=0.25, return_when=FIRST_COMPLETED)
+            publish_progress()
+            for future in completed:
+                results[futures[future]] = future.result()
+        publish_progress()
+
+    return [results[provider] for provider in providers]
+
+
 def run_research(config=None, progress=None):
     from .providers import collect
     from .analysis import analyze
@@ -29,18 +58,15 @@ def run_research(config=None, progress=None):
     tables, quality = collect(config, progress=progress)
     from .economy import collect_economy
     from .market_scope import collect_market_scope
-    from concurrent.futures import ThreadPoolExecutor
     progress("Collecting global economies and the wider index board")
-    with ThreadPoolExecutor(max_workers=2) as executor:
-        futures = [executor.submit(provider, config, progress=lambda *parts: progress(" | ".join(map(str, parts)))) for provider in (collect_economy, collect_market_scope)]
-        for future in futures:
-            extra_tables, extra_quality = future.result()
-            for name, frame in extra_tables.items():
-                tables[name] = pd.concat([tables[name], frame], ignore_index=True) if name in tables and not tables[name].empty else frame
-            for record in extra_quality:
-                record.setdefault("dataset", "global_economy" if "World Bank" in record.get("source", "") or "FRED" in record.get("source", "") or "MoSPI" in record.get("source", "") else "extended_scope")
-                record.setdefault("rows", None)
-            quality.extend(extra_quality)
+    providers = (collect_economy, collect_market_scope)
+    for extra_tables, extra_quality in _collect_concurrently(providers, config, progress):
+        for name, frame in extra_tables.items():
+            tables[name] = pd.concat([tables[name], frame], ignore_index=True) if name in tables and not tables[name].empty else frame
+        for record in extra_quality:
+            record.setdefault("dataset", "global_economy" if "World Bank" in record.get("source", "") or "FRED" in record.get("source", "") or "MoSPI" in record.get("source", "") else "extended_scope")
+            record.setdefault("rows", None)
+        quality.extend(extra_quality)
     from .supplementary import collect_supplementary
     progress("Collecting public news and policy observations")
     news, macro, extra_quality = collect_supplementary(config)
